@@ -1,0 +1,26 @@
+.cart {
+    margin: 2rem;
+    width: 20rem;
+    padding: 2rem;
+    
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .cart-label {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            text-align: left;
+            margin-right: 0.2rem;
+        }
+    }
+
+    .cart-total {
+        border-top: 1px solid #E7E4C5;
+        padding-top: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}

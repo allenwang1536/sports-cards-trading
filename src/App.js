@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import React, { useState } from "react";
+import CardsContainer from "./components/CardsContainer";
+import Cart from "./components/Cart";
+import mockedCards from './mock/MockedCards';
 
 function App() {
+
+  const [likedCards, setLikedCards] = useState([])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> <b>Sports Cards Shop</b></h1>
+      <div className="Cards">
+        <CardsContainer likedCards={likedCards} setLikedCards={setLikedCards} cards={mockedCards} />
+        <Cart cards={mockedCards} likedCards={likedCards} />
+      </div>
     </div>
   );
 }

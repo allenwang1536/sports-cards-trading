@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin: 1rem;
+    width: 13rem;
+    height: 25rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #B1AE94;
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 70%;
+
+        img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+        }
+    }
+
+    .description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 1rem 0;
+        flex-grow: 1;
+
+        p {
+            margin: 0.2rem;
+            padding: 0;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .heart {
+            margin-bottom: 1rem;
+            background: none;
+            border: none;
+            transition: transform 0.2s ease;
+        }
+
+        .heart:hover {
+            transform: scale(1.2)
+        }
+    }
+}

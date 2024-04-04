@@ -1,0 +1,46 @@
+.shopping-container {
+    
+    width: 100%;
+
+    .filters {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        button {
+            font-size: 2rem;
+            background: none;
+            outline: none;
+            cursor: pointer;
+            color: #E7E4C5;
+            margin: 0 1rem 0;
+            text-transform: uppercase;
+        }
+        .active {
+            border: 2px solid #E7E4C5;
+            transform: rotate(-10deg);
+        }
+    }
+    .extras {
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+        
+        button {
+            font-size: 1rem;
+            text-transform: uppercase;
+            background: none;
+            outline: none;
+            cursor: pointer;
+            color: #E7E4C5;
+            margin: 0 1rem 0;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+}
