@@ -49,4 +49,12 @@ h1 {
 .Cards {
   display: flex;
   flex-wrap: nowrap;
+  margin: 1rem;
+}
+
+@media (max-width: 600px) {
+  .Cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

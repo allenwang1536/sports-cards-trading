@@ -14,10 +14,13 @@
             color: #E7E4C5;
             margin: 0 1rem 0;
             text-transform: uppercase;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
         .active {
             border: 2px solid #E7E4C5;
             transform: rotate(-10deg);
+            background-color: #4A5548;
         }
     }
     .extras {
@@ -42,6 +45,5 @@
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 2rem;
-        margin-left: 2rem;
     }
 }
