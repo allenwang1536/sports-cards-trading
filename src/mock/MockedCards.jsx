@@ -9,8 +9,8 @@ const mockedCards = [
   {id: 8, name: 'Ryne Sandberg', date: '1988', price: '10.99', imagePath: '/images/ryne-sandberg.png', sport: 'Baseball'},
   {id: 9, name: 'Shohei Ohtani', date: '2015', price: '87.10', imagePath: '/images/shohei-ohtani.png', sport: 'Baseball'},
   {id: 10, name: 'Ted Williams', date: '1995', price: '62.81', imagePath: '/images/ted-williams.png', sport: 'Baseball'},
-  {id: 10, name: 'Larry Bird', date: '1985', price: '52.52', imagePath: '/images/larry-bird.png', sport: 'Basketball'},
-  {id: 10, name: 'John Stockton', date: '1967', price: '27.19', imagePath: '/images/john-stockton.png', sport: 'Basketball'},
+  {id: 11, name: 'Larry Bird', date: '1985', price: '52.52', imagePath: '/images/larry-bird.png', sport: 'Basketball'},
+  {id: 12, name: 'John Stockton', date: '1967', price: '27.19', imagePath: '/images/john-stockton.png', sport: 'Basketball'},
 ]
 
 export default mockedCards;
