@@ -17,7 +17,7 @@ export default function Cart({cards, likedCards}) {
       ))}
       <div className="cart-total">
         <p>Cart Total:</p>
-        <p>${cartCards.reduce((acc, card) => acc + Number(card.price), 0)}</p>
+        <p>${parseFloat(cartCards.reduce((acc, card) => acc + Number(card.price), 0).toFixed(2))}</p>
       </div>
     </div>
   );

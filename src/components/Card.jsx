@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as unlikedHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as likedHeart } from "@fortawesome/free-solid-svg-icons";
 
-export default function Card({ id, name, date, price,imagePath, liked, likedCards, setLikedCards }) {
+export default function Card({ id, name, date, price,imagePath, liked, sport, setLikedCards }) {
 
     const onHeartClick = () => {
         if (liked) {
@@ -22,9 +22,9 @@ export default function Card({ id, name, date, price,imagePath, liked, likedCard
         <div className="description">
             <div className="info">
             <p>{name}</p>
-            <p>{date}</p>
+            <p className='sub-info'><i>{sport}</i></p>
 
-            <p>${price}</p>
+            <p className='sub-info'>${price}</p>
             </div>
             <button className="heart" onClick={onHeartClick}>
                 <FontAwesomeIcon className="fa-lg" icon={liked ? likedHeart : unlikedHeart} />
