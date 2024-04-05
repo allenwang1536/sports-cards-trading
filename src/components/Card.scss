@@ -48,6 +48,9 @@
         }
 
         .heart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 1rem;
             background: none;
             border: none;

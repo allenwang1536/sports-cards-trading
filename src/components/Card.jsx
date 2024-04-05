@@ -28,6 +28,7 @@ export default function Card({ id, name, date, price,imagePath, liked, sport, se
             </div>
             <button className="heart" onClick={onHeartClick}>
                 <FontAwesomeIcon className="fa-lg" icon={liked ? likedHeart : unlikedHeart} />
+                Cart
             </button>
         </div>
         </div>
